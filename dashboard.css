@@ -1,0 +1,155 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #2b3a42, #1a2a33); /* Dark blue gradient background */
+    color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: rgba(35, 35, 35, 0.8); /* Dark header background with transparency */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(28, 28, 28, 0.8);
+    backdrop-filter: blur(6px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e7eaeb; /* Soft blue color */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00aaff; /* Blue color on hover */
+}
+
+/* Main Content */
+main.dashboard {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+/* Left Column */
+.left-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background: #2e3c47; /* Darker blue background */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+.left-column h1 {
+    font-size: 2.5rem;
+    color: #e0e0e0; /* Light grey text */
+    margin-bottom: 10px;
+}
+
+.left-column p {
+    font-size: 1.1rem;
+    color: #b0b0b0; /* Lighter grey text */
+    margin-bottom: 30px;
+}
+
+/* .cta-button .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #00aaff; /* Soft blue button */
+    /* color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s, transform 0.3s;
+} */
+
+
+/* .cta-button .btn:hover {
+    background-color: #0077cc;
+    transform: scale(1.05);
+} */
+
+/* Right Column */
+.right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Action Cards */
+.action-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #3c4e63; /* Dark blue for cards */
+    padding: 25px 40px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    color: #00aaff;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(35, 35, 35, 0.8); /* Dark footer background */
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #b0b0b0; /* Light grey text */
+    border-top: 1px solid #0b0b0b;
+    margin-top: 30px;
+}
+
+
